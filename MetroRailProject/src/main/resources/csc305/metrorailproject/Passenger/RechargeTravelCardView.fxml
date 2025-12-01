@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailproject.Passenger.RechargeTravelCardViewController">
+   <children>
+      <Label layoutX="269.0" layoutY="14.0" text="Recharge Travel Card" />
+      <Label layoutX="39.0" layoutY="42.0" text="Card Id:" />
+      <Label layoutX="39.0" layoutY="74.0" text="Is Monthly?" />
+      <Label layoutX="39.0" layoutY="106.0" text="Recharge amount:" />
+      <Label layoutX="39.0" layoutY="137.0" text="Recharge amount if Monthly:" />
+      <TextField fx:id="idTextField" layoutX="194.0" layoutY="38.0" />
+      <TextField fx:id="amountTextField" layoutX="194.0" layoutY="102.0" />
+      <CheckBox fx:id="monthlyCheckBox" layoutX="233.0" layoutY="74.0" mnemonicParsing="false" text="Yes" />
+      <CheckBox fx:id="monthlyAmountCheckBox" disable="true" layoutX="233.0" layoutY="137.0" mnemonicParsing="false" text="500 TK" />
+      <Button layoutX="261.0" layoutY="187.0" mnemonicParsing="false" onAction="#rechargeTravelCardButtonOnAction" text="Recharge Travel Card" />
+      <TableView fx:id="travelCardTableView" layoutX="15.0" layoutY="218.0" prefHeight="174.0" prefWidth="551.0">
+        <columns>
+          <TableColumn fx:id="cardIdTableColumn" prefWidth="100.800048828125" text="Card Id" />
+          <TableColumn fx:id="passengerNameTableColumn" prefWidth="252.79998779296875" text="Passenger Name" />
+            <TableColumn fx:id="isMonthlyTableColumn" prefWidth="72.79998779296875" text="Monthly?" />
+            <TableColumn fx:id="amountTableColumn" prefWidth="126.4000244140625" text="Amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="39.0" layoutY="169.0" text="Final Travel Date for Monthly:" />
+      <Label fx:id="travelDateLabel" layoutX="233.0" layoutY="169.0" text="Label" />
+      <Button layoutX="409.0" layoutY="187.0" mnemonicParsing="false" onAction="#resetButtonOnAction" text="Reset" />
+   </children>
+</AnchorPane>
