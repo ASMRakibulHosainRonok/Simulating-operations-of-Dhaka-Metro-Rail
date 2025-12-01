@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="passengerDashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailabdullah.Passenger.PassengerDashboardViewController">
+    <left>
+        <VBox prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#dashboardButtonOnAction" prefWidth="150.0" text="Dashboard" />
+                <Button mnemonicParsing="false" onAction="#ticketButtonOnAction" prefWidth="150.0" text="Ticket" />
+                <Button mnemonicParsing="false" onAction="#rechargeTravelCardButtonOnAction" prefWidth="150.0" text="Recharge Travel Card" />
+                <Button mnemonicParsing="false" onAction="#routesAndFaresButtonOnAction" prefWidth="150.0" text="Routes and Fares" />
+                <Button mnemonicParsing="false" onAction="#scheduleButtonOnAction" prefWidth="150.0" text="Schedule" />
+                <Button mnemonicParsing="false" onAction="#reportButtonOnAction" prefWidth="150.0" text="Report" />
+                <Button mnemonicParsing="false" onAction="#feedbackButtonOnAction" prefWidth="150.0" text="Feedback" />
+                <Button mnemonicParsing="false" onAction="#historyButtonOnAction" prefWidth="150.0" text="History" />
+                <Button mnemonicParsing="false" onAction="#linkedUserButtonOnAction" prefWidth="150.0" text="Linked User" />
+                <Button mnemonicParsing="false" onAction="#logoutButtonOnAction" prefWidth="150.0" text="Logout" />
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="279.0" layoutY="31.0" text="Dashboard" />
+                <Label fx:id="greetLabel" layoutX="42.0" layoutY="95.0" text="Label" />
+                <ImageView fx:id="passengerImageVIew" fitHeight="150.0" fitWidth="200.0" layoutX="395.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../../../../../../../Downloads/passenger(1).png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>
