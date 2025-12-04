@@ -1,5 +1,11 @@
 package csc305.metrorailabdullah.TicketingStaff;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+
 public class ReplaceTravelCardViewController
 {
     @javafx.fxml.FXML
