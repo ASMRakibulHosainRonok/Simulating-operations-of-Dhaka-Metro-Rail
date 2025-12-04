@@ -1,6 +1,7 @@
 module csc305.metrorailabdullah {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.graphics;
 
 
     opens csc305.metrorailabdullah to javafx.fxml;

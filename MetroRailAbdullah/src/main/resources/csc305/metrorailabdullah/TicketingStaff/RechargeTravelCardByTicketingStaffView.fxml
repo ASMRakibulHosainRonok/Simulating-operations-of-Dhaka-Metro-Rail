@@ -8,7 +8,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailabdullah.TicketingStaff.RechargeTravelCardByTicketingStaffVIewCOntroller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailabdullah.TicketingStaff.RechargeTravelCardByTicketingStaffViewController">
     <children>
         <Label layoutX="257.0" layoutY="14.0" text="Recharge Travel Card" />
         <Label layoutX="49.0" layoutY="52.0" text="Card Id:" />
