@@ -14,9 +14,9 @@
         <Label layoutX="40.0" layoutY="74.0" text="Route Option:" />
         <Label layoutX="40.0" layoutY="105.0" text="Train Number:" />
         <Button fx:id="statusButton" disable="true" layoutX="274.0" layoutY="147.0" mnemonicParsing="false" onAction="#seeStatusButtonOnAction" text="See Status" />
-        <ComboBox fx:id="sourceStationComboBox" layoutX="136.0" layoutY="35.0" prefWidth="150.0" />
-        <ComboBox fx:id="routeOptionComboBox" layoutX="136.0" layoutY="70.0" prefWidth="150.0" />
-        <ComboBox fx:id="trainNumberComboBox" layoutX="136.0" layoutY="101.0" prefWidth="150.0" />
+        <ComboBox fx:id="sourceStationComboBox" layoutX="136.0" layoutY="35.0" onAction="#sourceStationComboBoxOnAction" prefWidth="150.0" />
+        <ComboBox fx:id="routeOptionComboBox" layoutX="136.0" layoutY="70.0" onAction="#routeOptionComboBoxOnAction" prefWidth="150.0" />
+        <ComboBox fx:id="trainNumberComboBox" layoutX="136.0" layoutY="101.0" onAction="#trainNumberComboBoxOnAction" prefWidth="150.0" />
         <TableView fx:id="routesTableView" layoutX="30.0" layoutY="221.0" prefHeight="114.0" prefWidth="560.0">
             <columns>
                 <TableColumn fx:id="routeSourceStationTableColumn" prefWidth="160.79995346069336" text="Source station" />

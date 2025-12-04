@@ -17,7 +17,7 @@
         <Label layoutX="39.0" layoutY="137.0" text="Recharge amount if Monthly:" />
         <TextField fx:id="idTextField" layoutX="194.0" layoutY="38.0" />
         <TextField fx:id="amountTextField" layoutX="194.0" layoutY="102.0" />
-        <CheckBox fx:id="monthlyCheckBox" layoutX="233.0" layoutY="74.0" mnemonicParsing="false" text="Yes" />
+        <CheckBox fx:id="monthlyCheckBox" layoutX="233.0" layoutY="74.0" mnemonicParsing="false" onAction="#monthlyCheckBoxOnAction" text="Yes" />
         <CheckBox fx:id="monthlyAmountCheckBox" disable="true" layoutX="233.0" layoutY="137.0" mnemonicParsing="false" text="500 TK" />
         <Button layoutX="261.0" layoutY="187.0" mnemonicParsing="false" onAction="#rechargeTravelCardButtonOnAction" text="Recharge Travel Card" />
         <TableView fx:id="travelCardTableView" layoutX="15.0" layoutY="218.0" prefHeight="174.0" prefWidth="551.0">

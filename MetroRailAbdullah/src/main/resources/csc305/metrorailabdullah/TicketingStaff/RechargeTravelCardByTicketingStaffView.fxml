@@ -8,7 +8,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailabdullah.TicketingStaff.RechargeTravelCardByTicketingStaffVIewCOntroller">
     <children>
         <Label layoutX="257.0" layoutY="14.0" text="Recharge Travel Card" />
@@ -18,7 +17,7 @@
         <Label layoutX="49.0" layoutY="147.0" text="Recharge amount if Monthly:" />
         <TextField fx:id="cardIdTextField" layoutX="204.0" layoutY="48.0" />
         <TextField fx:id="amountTextField" layoutX="204.0" layoutY="112.0" />
-        <CheckBox fx:id="monthlyCheckBox" layoutX="243.0" layoutY="84.0" mnemonicParsing="false" text="Yes" />
+        <CheckBox fx:id="monthlyCheckBox" layoutX="243.0" layoutY="84.0" mnemonicParsing="false" onAction="#monthlyCheckBoxOnAction" text="Yes" />
         <CheckBox fx:id="monthlyAmountCheckBox" disable="true" layoutX="243.0" layoutY="147.0" mnemonicParsing="false" text="500 TK" />
         <Button layoutX="271.0" layoutY="197.0" mnemonicParsing="false" onAction="#rechargeTravelCardButtonOnAction" text="Recharge Travel Card" />
         <TableView fx:id="travelCardTableView" layoutX="25.0" layoutY="233.0" prefHeight="158.0" prefWidth="551.0">

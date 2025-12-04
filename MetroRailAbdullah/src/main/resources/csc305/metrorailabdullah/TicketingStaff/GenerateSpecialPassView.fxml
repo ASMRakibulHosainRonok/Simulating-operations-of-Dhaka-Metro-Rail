@@ -10,7 +10,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailabdullah.TicketingStaff.GenerateSpecialPassViewController">
     <children>
         <Label layoutX="268.0" layoutY="14.0" text="Special Pass" />
@@ -23,7 +22,7 @@
         <CheckBox fx:id="studentsCheckBox" disable="true" layoutX="400.0" layoutY="52.0" mnemonicParsing="false" text="10%" />
         <CheckBox fx:id="seniorsCheckBox" disable="true" layoutX="455.0" layoutY="52.0" mnemonicParsing="false" text="10%" />
         <CheckBox fx:id="corporateCeckBox" disable="true" layoutX="507.0" layoutY="52.0" mnemonicParsing="false" text="5" />
-        <ComboBox fx:id="eligibilityComboBox" layoutX="112.0" layoutY="48.0" prefWidth="150.0" />
+        <ComboBox fx:id="eligibilityComboBox" layoutX="112.0" layoutY="48.0" onAction="#eligibilityComboBoxOnAction" prefWidth="150.0" />
         <Label fx:id="cardIdLabel" layoutX="173.0" layoutY="80.0" text="Label" />
         <Label fx:id="balanceLabel" layoutX="173.0" layoutY="132.0" text="Label" />
         <DatePicker fx:id="finalDatePicker" layoutX="368.0" layoutY="76.0" />
