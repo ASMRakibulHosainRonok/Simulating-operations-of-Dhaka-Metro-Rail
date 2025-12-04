@@ -15,7 +15,7 @@
     <left>
         <VBox prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER">
             <children>
-                <Button mnemonicParsing="false" onAction="#dasboardButtonOnAction" prefWidth="150.0" text="Dashboard" />
+                <Button mnemonicParsing="false" onAction="#dashboardButtonOnAction" prefWidth="150.0" text="Dashboard" />
                 <Button mnemonicParsing="false" onAction="#ticketButtonOnAction" prefWidth="150.0" text="Ticket" />
                 <Button mnemonicParsing="false" onAction="#salesReportButtonOnAction" prefWidth="150.0" text="Sales Report" />
                 <Button mnemonicParsing="false" onAction="#reconciliationReportButtonOnAction" prefWidth="150.0" text="Reconciliation Report" />

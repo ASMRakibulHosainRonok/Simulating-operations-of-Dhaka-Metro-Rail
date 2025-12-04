@@ -47,7 +47,7 @@ public class LoginViewController
                     try {
                         success.setContentText("Welcome! " + p.getName());
                         success.showAndWait();
-                        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("PassengerDashboardView.fxml"));
+                        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Passenger/PassengerDashboardView.fxml"));
                         Scene scene = new Scene(fxmlLoader.load());
                         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                         currentStage.setTitle("Passenger Dashboard");
@@ -66,7 +66,7 @@ public class LoginViewController
                     try {
                         success.setContentText("Welcome! " + staff.getName());
                         success.showAndWait();
-                        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("TicketingStaffView.fxml"));
+                        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("TicketingStaff/TicketingStaffView.fxml"));
                         Scene scene = new Scene(fxmlLoader.load());
                         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                         currentStage.setTitle("Ticketing Staff Dashboard");

@@ -1,5 +1,8 @@
 package csc305.metrorailabdullah.Passenger;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.*;
+
 public class SeeHistoryViewController
 {
     @javafx.fxml.FXML
