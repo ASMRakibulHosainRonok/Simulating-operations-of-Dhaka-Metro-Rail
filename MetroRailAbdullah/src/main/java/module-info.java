@@ -4,6 +4,7 @@ module csc305.metrorailabdullah {
     requires javafx.graphics;
     requires java.desktop;
     requires csc305.metrorailabdullah;
+    requires javafx.base;
 
 
     opens csc305.metrorailabdullah to javafx.fxml;

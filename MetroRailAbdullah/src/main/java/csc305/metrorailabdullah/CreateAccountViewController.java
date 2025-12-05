@@ -134,6 +134,7 @@ public class CreateAccountViewController
             catch (Exception e) {
 
             }
+            typeComboBox.setValue(null);
             idLabel.setText("Label");
             nameTextField.clear();
             emailTextField.clear();
