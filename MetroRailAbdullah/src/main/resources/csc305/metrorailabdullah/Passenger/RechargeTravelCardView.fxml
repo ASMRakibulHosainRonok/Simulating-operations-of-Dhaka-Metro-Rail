@@ -28,8 +28,7 @@
                 <TableColumn fx:id="amountTableColumn" prefWidth="126.4000244140625" text="Amount" />
             </columns>
         </TableView>
-        <Label layoutX="39.0" layoutY="169.0" text="Final Travel Date for Monthly:" />
-        <Label fx:id="travelDateLabel" layoutX="233.0" layoutY="169.0" text="Label" />
         <Button layoutX="409.0" layoutY="187.0" mnemonicParsing="false" onAction="#resetButtonOnAction" text="Reset" />
+      <Label fx:id="indicationLabel" layoutX="409.0" layoutY="74.0" text="Label" />
     </children>
 </AnchorPane>
