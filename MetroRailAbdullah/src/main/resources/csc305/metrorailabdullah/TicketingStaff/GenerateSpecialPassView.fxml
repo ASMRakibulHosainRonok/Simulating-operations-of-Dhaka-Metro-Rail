@@ -14,30 +14,28 @@
     <children>
         <Label layoutX="268.0" layoutY="14.0" text="Special Pass" />
         <Label layoutX="42.0" layoutY="52.0" text="Eligibility:" />
-        <Label layoutX="42.0" layoutY="80.0" text="Card Id:" />
-        <Label layoutX="42.0" layoutY="105.0" text="Passenger Id:" />
-        <Label layoutX="42.0" layoutY="132.0" text="Balance:" />
+        <Label layoutX="42.0" layoutY="80.0" text="Special Card Id:" />
+        <Label layoutX="42.0" layoutY="105.0" text="Card Id:" />
         <Label layoutX="292.0" layoutY="52.0" text="Discount privilege:" />
         <Label layoutX="292.0" layoutY="80.0" text="Final Date:" />
         <CheckBox fx:id="studentsCheckBox" disable="true" layoutX="400.0" layoutY="52.0" mnemonicParsing="false" text="10%" />
         <CheckBox fx:id="seniorsCheckBox" disable="true" layoutX="455.0" layoutY="52.0" mnemonicParsing="false" text="10%" />
-        <CheckBox fx:id="corporateCeckBox" disable="true" layoutX="507.0" layoutY="52.0" mnemonicParsing="false" text="5" />
+        <CheckBox fx:id="corporateCheckBox" disable="true" layoutX="507.0" layoutY="52.0" mnemonicParsing="false" text="5%" />
         <ComboBox fx:id="eligibilityComboBox" layoutX="112.0" layoutY="48.0" onAction="#eligibilityComboBoxOnAction" prefWidth="150.0" />
         <Label fx:id="cardIdLabel" layoutX="173.0" layoutY="80.0" text="Label" />
-        <Label fx:id="balanceLabel" layoutX="173.0" layoutY="132.0" text="Label" />
         <DatePicker fx:id="finalDatePicker" layoutX="368.0" layoutY="76.0" />
-        <TextField fx:id="passengerIdTextField" layoutX="113.0" layoutY="101.0" />
+        <TextField fx:id="cardIdTextField" layoutX="113.0" layoutY="101.0" />
         <Button layoutX="314.0" layoutY="128.0" mnemonicParsing="false" onAction="#generateSpecialPassButtonOnAction" text="Generate Special Pass" />
         <TableView fx:id="specialPassTableView" layoutX="19.0" layoutY="174.0" prefHeight="200.0" prefWidth="561.0">
             <columns>
                 <TableColumn fx:id="cardIdTableColumn" prefWidth="75.0" text="Card Id" />
                 <TableColumn fx:id="passengerNameTableColumn" prefWidth="98.39996337890625" text="Passenger Name" />
-                <TableColumn fx:id="eligibilityTableColumn" prefWidth="65.5999755859375" text="Eligibility" />
-                <TableColumn fx:id="discountPrivilegeTableColumn" prefWidth="111.199951171875" text="Discount privilege" />
-                <TableColumn fx:id="balanceTableColumn" prefWidth="61.5999755859375" text="Balance" />
-                <TableColumn fx:id="finalDateTableColumn" prefWidth="153.60003662109375" text="Final Date" />
+                <TableColumn fx:id="eligibilityTableColumn" prefWidth="89.5999755859375" text="Eligibility" />
+                <TableColumn fx:id="balanceTableColumn" prefWidth="83.20001220703125" text="Balance" />
+                <TableColumn fx:id="finalDateTableColumn" prefWidth="216.0" text="Final Date" />
             </columns>
         </TableView>
         <Button layoutX="456.0" layoutY="128.0" mnemonicParsing="false" onAction="#resetButtonOnAction" text="Reset" />
+      <Label fx:id="eligibilityLabel" layoutX="173.0" layoutY="132.0" text="Label" />
     </children>
 </AnchorPane>
