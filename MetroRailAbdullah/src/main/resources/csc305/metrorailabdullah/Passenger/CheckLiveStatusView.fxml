@@ -7,36 +7,27 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="523.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailabdullah.Passenger.CheckLiveStatusViewController">
+<AnchorPane prefHeight="385.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailabdullah.Passenger.CheckLiveStatusViewController">
     <children>
         <Label layoutX="286.0" layoutY="14.0" text="Schedule" />
         <Label layoutX="40.0" layoutY="39.0" text="Source Station:" />
         <Label layoutX="40.0" layoutY="74.0" text="Route Option:" />
-        <Label layoutX="40.0" layoutY="105.0" text="Train Number:" />
         <Button fx:id="statusButton" disable="true" layoutX="274.0" layoutY="147.0" mnemonicParsing="false" onAction="#seeStatusButtonOnAction" text="See Status" />
         <ComboBox fx:id="sourceStationComboBox" layoutX="136.0" layoutY="35.0" onAction="#sourceStationComboBoxOnAction" prefWidth="150.0" />
         <ComboBox fx:id="routeOptionComboBox" layoutX="136.0" layoutY="70.0" onAction="#routeOptionComboBoxOnAction" prefWidth="150.0" />
-        <ComboBox fx:id="trainNumberComboBox" layoutX="136.0" layoutY="101.0" onAction="#trainNumberComboBoxOnAction" prefWidth="150.0" />
-        <TableView fx:id="routesTableView" layoutX="30.0" layoutY="221.0" prefHeight="114.0" prefWidth="560.0">
-            <columns>
-                <TableColumn fx:id="routeSourceStationTableColumn" prefWidth="160.79995346069336" text="Source station" />
-                <TableColumn fx:id="routeDestinationStationTableColumn" prefWidth="121.5999755859375" text="Destination Station" />
-                <TableColumn fx:id="routeOptionTableColumn" minWidth="3.20001220703125" prefWidth="108.7999267578125" text="Route Option" />
-                <TableColumn fx:id="routeTravelTImeTableColumn" minWidth="3.20001220703125" prefWidth="168.0001220703125" text="Travel Time" />
-            </columns>
-        </TableView>
-        <Label layoutX="282.0" layoutY="187.0" text="Routes" />
-        <Label layoutX="282.0" layoutY="347.0" text="Live status" />
-        <TableView layoutX="36.0" layoutY="367.0" onSort="#liveStatusTableView" prefHeight="142.0" prefWidth="560.0">
+        <Label layoutX="266.0" layoutY="180.0" text="Live status" />
+        <TableView fx:id="liveStatusTableView" layoutX="20.0" layoutY="200.0" prefHeight="142.0" prefWidth="570.0">
             <columns>
                 <TableColumn fx:id="sourceStationTableColumn" prefWidth="90.40008544921875" text="Source Station" />
                 <TableColumn fx:id="destinationStationTableColumn" prefWidth="117.5999755859375" text="Destination Station" />
                 <TableColumn fx:id="liveRouteOptionTableColumn" prefWidth="89.5999755859375" text="Route Option" />
-                <TableColumn fx:id="travelTimeTableColumn" prefWidth="76.0" text="Travel Time" />
-                <TableColumn fx:id="trainNumberTableColumn" prefWidth="124.79998779296875" text="Train Number" />
-                <TableColumn fx:id="statusTableColumn" prefWidth="76.800048828125" text="Status" />
+                <TableColumn fx:id="travelTimeTableColumn" prefWidth="88.79998779296875" text="Depart Time" />
+                <TableColumn fx:id="statusTableColumn" prefWidth="182.4000244140625" text="Status" />
             </columns>
         </TableView>
         <Button layoutX="386.0" layoutY="147.0" mnemonicParsing="false" onAction="#subscribeForAlertsButtonOnAction" text="Subscribe for Alerts" />
+      <Button layoutX="169.0" layoutY="147.0" mnemonicParsing="false" onAction="#resetButtonOnAction" text="Reset" />
+      <Label fx:id="sourceLabel" layoutX="386.0" layoutY="39.0" text="Label" />
+      <Label fx:id="routeLabel" layoutX="386.0" layoutY="74.0" text="Label" />
     </children>
 </AnchorPane>

@@ -59,6 +59,7 @@ public class CheckRoutesAndFaresViewController
     @javafx.fxml.FXML
     public void resetButtonOnAction(ActionEvent actionEvent) {
         routesAndFaresTableView.getItems().clear();
+        routesAndFaresTableView.setItems(routeAndFareList);
     }
 
     @javafx.fxml.FXML

@@ -128,4 +128,10 @@ public class SeeHistoryViewController
         journeyFromDatePicker.setValue(null);
         journeyToDatePicker.setValue(null);
     }
+
+    @javafx.fxml.FXML
+    public void resetButtonOnAction(ActionEvent actionEvent) {
+        historyTableView.getItems().clear();
+        historyTableView.setItems(historyList);
+    }
 }
