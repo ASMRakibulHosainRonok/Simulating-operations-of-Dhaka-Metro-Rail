@@ -75,7 +75,7 @@ public class RechargeTravelCardByTicketingStaffViewController
             }
         }
         travelCardTableView.setItems(travelCardList);
-        File travelCardFile = new File("Updated Travel Cards by Passenger");
+        File travelCardFile = new File("Updated Travel Cards by Ticketing Staff.bin");
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
         try {

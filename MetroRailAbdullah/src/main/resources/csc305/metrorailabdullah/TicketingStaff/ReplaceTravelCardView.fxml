@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="504.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailabdullah.TicketingStaff.ReplaceTravelCardViewController">
     <children>
         <Label layoutX="245.0" layoutY="14.0" text="Replace Travel Cards" />
@@ -24,7 +23,7 @@
             <columns>
                 <TableColumn fx:id="oldCardIdTableColumn" prefWidth="100.0" text="Card Id" />
                 <TableColumn fx:id="oldCardPassengerNameTableColumn" prefWidth="228.0" text="Passenger Name" />
-                <TableColumn fx:id="OldCardAmountTableColumn" prefWidth="120.79998779296875" text="Amount" />
+                <TableColumn fx:id="oldCardAmountTableColumn" prefWidth="120.79998779296875" text="Amount" />
             </columns>
         </TableView>
         <Label layoutX="249.0" layoutY="325.0" text="New Card" />
@@ -36,5 +35,6 @@
             </columns>
         </TableView>
         <Button layoutX="355.0" layoutY="149.0" mnemonicParsing="false" onAction="#issueNewCardButtonOnAction" text="Issue New Card" />
+      <Button layoutX="470.0" layoutY="149.0" mnemonicParsing="false" onAction="#resetAllButtonOnAction" text="Reset All" />
     </children>
 </AnchorPane>

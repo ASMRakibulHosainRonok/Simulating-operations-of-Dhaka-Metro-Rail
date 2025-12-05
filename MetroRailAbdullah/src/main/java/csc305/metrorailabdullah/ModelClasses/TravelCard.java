@@ -12,6 +12,8 @@ public class TravelCard implements Serializable {
         this.passengerName = passengerName;
         this.balance = balance;
         this.isMonthly = isMonthly;
+        isDamagedOrLost = false;
+        isActivated = true;
     }
 
     public String getCardId() {
