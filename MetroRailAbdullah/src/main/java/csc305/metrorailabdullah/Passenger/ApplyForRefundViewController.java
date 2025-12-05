@@ -42,7 +42,7 @@ public class ApplyForRefundViewController
         reportIdLabel.setText(this.generateId());
 
         reportIdTableColumn.setCellValueFactory(new PropertyValueFactory<IssueReport, String>("reportId"));
-        ticketIdTableColumn.setCellValueFactory(new PropertyValueFactory<IssueReport, String>(> "ticketId"));
+        ticketIdTableColumn.setCellValueFactory(new PropertyValueFactory<IssueReport, String>("ticketId"));
         passengerNameTableColumn.setCellValueFactory(new PropertyValueFactory<IssueReport, String>("passengerName"));
         issueTableColumn.setCellValueFactory(new PropertyValueFactory<IssueReport, String>("issue"));
     }
