@@ -67,6 +67,7 @@ public class GenerateTicketViewController
 
     @javafx.fxml.FXML
     public void generateTicketButtonOnAction(ActionEvent actionEvent) {
+        ticketTableView.getItems().clear();
         String id = idLabel.getText();
         String name = nameTextField.getText();
         String source = sourceStationComboBox.getValue();

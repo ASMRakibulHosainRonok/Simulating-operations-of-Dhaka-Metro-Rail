@@ -67,6 +67,7 @@ public class PurchaseTicketViewController
 
     @javafx.fxml.FXML
     public void purchaseTicketButtonOnAction(ActionEvent actionEvent) {
+        ticketTableView.getItems().clear();
         String id = idLabel.getText();
         String name = nameTextField.getText();
         String source = sourceStationComboBox.getValue();

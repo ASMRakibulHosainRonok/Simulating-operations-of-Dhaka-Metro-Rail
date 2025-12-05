@@ -88,6 +88,7 @@ public class GenerateSpecialPassViewController
 
     @javafx.fxml.FXML
     public void generateSpecialPassButtonOnAction(ActionEvent actionEvent) {
+        specialPassTableView.getItems().clear();
         String specialCardId = cardIdLabel.getText();
         String eligibility = eligibilityLabel.getText();
         File oldCardFile = new File("Updated Travel Cards after replacement by Ticketing Staff.bin");

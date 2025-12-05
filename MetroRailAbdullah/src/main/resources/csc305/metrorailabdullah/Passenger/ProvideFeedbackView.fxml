@@ -14,7 +14,7 @@
         <Label layoutX="48.0" layoutY="47.0" text="Route:" />
         <Label layoutX="48.0" layoutY="76.0" text="Rating:" />
         <Label layoutX="48.0" layoutY="106.0" text="Comment:" />
-        <ComboBox fx:id="routeComboBox" layoutX="126.0" layoutY="43.0" onAction="#routeComboBoxOnAction" prefWidth="150.0" />
+        <ComboBox fx:id="routeComboBox" layoutX="126.0" layoutY="43.0" prefWidth="150.0" />
         <Button layoutX="311.0" layoutY="43.0" mnemonicParsing="false" onAction="#reviewButtonOnAction" text="Review" />
         <ComboBox fx:id="ratingComboBox" disable="true" layoutX="126.0" layoutY="72.0" prefWidth="150.0" />
         <TextArea fx:id="commentTextArea" disable="true" layoutX="126.0" layoutY="115.0" prefHeight="70.0" prefWidth="311.0" />
@@ -27,5 +27,6 @@
             </columns>
         </TableView>
         <Button layoutX="391.0" layoutY="200.0" mnemonicParsing="false" onAction="#resetButtonOnAction" text="Reset" />
+      <Label fx:id="routeLabel" layoutX="400.0" layoutY="47.0" text="Label" />
     </children>
 </AnchorPane>

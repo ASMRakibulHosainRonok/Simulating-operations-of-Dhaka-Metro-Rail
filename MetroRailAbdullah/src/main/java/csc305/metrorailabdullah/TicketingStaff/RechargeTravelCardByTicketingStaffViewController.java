@@ -59,6 +59,7 @@ public class RechargeTravelCardByTicketingStaffViewController
 
     @javafx.fxml.FXML
     public void rechargeTravelCardButtonOnAction(ActionEvent actionEvent) {
+        travelCardTableView.getItems().clear();
         String id = cardIdTextField.getText();
         String indicate = indicationLabel.getText();
         float amount = 0;

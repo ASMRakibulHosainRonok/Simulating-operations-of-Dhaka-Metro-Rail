@@ -60,6 +60,8 @@ public class ReplaceTravelCardViewController
 
     @javafx.fxml.FXML
     public void issueNewCardButtonOnAction(ActionEvent actionEvent) {
+        oldCardTableVIew.getItems().clear();
+        newCardTableView.getItems().clear();
         String oldCardId = oldIdTextField.getText();
         File oldCardFile = new File("Updated Travel Cards by Ticketing Staff.bin");
         FileInputStream fis = null;
