@@ -30,9 +30,9 @@
         <Button layoutX="513.0" layoutY="174.0" mnemonicParsing="false" onAction="#logsButtonOnAction" text="Logs" />
         <TableView fx:id="historyTableView" layoutX="7.0" layoutY="212.0" prefHeight="174.0" prefWidth="586.0">
             <columns>
-                <TableColumn fx:id="hisotryIdTableColumn" prefWidth="64.800048828125" text="History Id" />
-                <TableColumn fx:id="ticketIdTableColumn" prefWidth="62.39996337890625" text="Ticket Id" />
-                <TableColumn fx:id="passengerNameTableColumn" prefWidth="98.4000244140625" text="Passenger Name" />
+                <TableColumn fx:id="historyIdTableColumn" prefWidth="64.800048828125" text="History Id" />
+                <TableColumn fx:id="ticketIdTableColumn" prefWidth="62.39996337890625" text="Id" />
+                <TableColumn fx:id="passengerIdTableColumn" prefWidth="98.4000244140625" text="Passenger Id" />
                 <TableColumn fx:id="routeTableColumn" prefWidth="75.0" text="Route" />
                 <TableColumn fx:id="journeyDateTableColumn" prefWidth="84.800048828125" text="Journey Date" />
                 <TableColumn fx:id="fareTableColumn" prefWidth="52.800048828125" text="Fare" />
