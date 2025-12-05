@@ -92,8 +92,8 @@ public class CreateAccountViewController
             Alert a = new Alert(Alert.AlertType.CONFIRMATION);
             a.setTitle("Congrats!");
             File objectf1, objectf2;
-            FileOutputStream fos1, fos2;
-            ObjectOutputStream oos1, oos2;
+            FileOutputStream fos1, fos2 = null;
+            ObjectOutputStream oos1, oos2 = null;
             objectf1 = new File("Passenger Accounts.bin:");
             objectf2 = new File("Ticketing Staff accounts.bin");
             try {
@@ -157,4 +157,5 @@ public class CreateAccountViewController
         }
         idLabel.setText(id);
     }
+
 }
