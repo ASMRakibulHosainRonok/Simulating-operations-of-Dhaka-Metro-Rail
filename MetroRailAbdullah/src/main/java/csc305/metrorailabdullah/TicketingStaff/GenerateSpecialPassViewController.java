@@ -91,7 +91,7 @@ public class GenerateSpecialPassViewController
         specialPassTableView.getItems().clear();
         String specialCardId = cardIdLabel.getText();
         String eligibility = eligibilityLabel.getText();
-        File oldCardFile = new File("Updated Travel Cards after replacement by Ticketing Staff.bin");
+        File oldCardFile = new File("Special Travel Pass.bin");
         FileInputStream fis = null;
         ObjectInputStream ois = null;
         try {
