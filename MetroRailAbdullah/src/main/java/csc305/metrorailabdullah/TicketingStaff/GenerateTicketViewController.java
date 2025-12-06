@@ -79,7 +79,7 @@ public class GenerateTicketViewController
         Ticket tick = new Ticket(id, name, source, destination, purchaseDate, travelDate);
         ticketList.add(tick);
         ticketTableView.setItems(ticketList);
-        File ticketFile = new File("Tickets.bin");
+        File ticketFile = new File("Tickets by Ticketing Staff.bin");
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
         try {

@@ -95,7 +95,7 @@ public class CreateAccountViewController
             FileOutputStream fos1, fos2 = null;
             ObjectOutputStream oos1, oos2 = null;
             objectf1 = new File("Passenger Accounts.bin:");
-            objectf2 = new File("Ticketing Staff accounts.bin");
+            objectf2 = new File("Ticketing Staff Accounts.bin");
             try {
                 if(objectf1.exists()) {
                     fos1 = new FileOutputStream(objectf1, true);
