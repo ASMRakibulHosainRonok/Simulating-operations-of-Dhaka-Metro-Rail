@@ -8,8 +8,7 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="480.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailabdullah.TicketingStaff.MonitorGatesViewController">
+<AnchorPane prefHeight="396.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csc305.metrorailabdullah.TicketingStaff.MonitorGatesViewController">
     <children>
         <Label layoutX="286.0" layoutY="21.0" text="Gates" />
         <Label layoutX="26.0" layoutY="46.0" text="Gate No:" />
@@ -35,19 +34,10 @@
                 <TableColumn fx:id="malfunctionedTableColumn" prefWidth="103.20004272460938" text="Malfunctioned?" />
             </columns>
         </TableView>
-        <Label layoutX="263.0" layoutY="308.0" text="Gates with anomalies" />
         <Button layoutX="275.0" layoutY="276.0" mnemonicParsing="false" onAction="#detectAnomaliesButtonOnAction" text="Detect Anomalies" />
-        <TableView fx:id="anomalyGatesTableView" layoutX="12.0" layoutY="326.0" prefHeight="102.0" prefWidth="584.0">
-            <columns>
-                <TableColumn fx:id="anomalyGateNoTableColumn" prefWidth="75.0" text="Gate No" />
-                <TableColumn fx:id="anomalyAccessTimeTableColumn" prefWidth="75.0" text="Access Time" />
-                <TableColumn fx:id="anomalyAccessDateTableColumn" prefWidth="75.0" text="Access Date" />
-                <TableColumn fx:id="anomalySuccessfulScanTableColumn" prefWidth="136.0" text="No of Successful Scans" />
-                <TableColumn fx:id="anomalyFailedScansTableColumn" prefWidth="109.5999755859375" text="No of Failed Scans" />
-                <TableColumn fx:id="anomalyMalfunctionedTableColumn" prefWidth="112.00003051757812" text="Malfunctioned?" />
-            </columns>
-        </TableView>
-        <Button layoutX="195.0" layoutY="440.0" mnemonicParsing="false" onAction="#contactSecurityButtonOnAction" text="Contact Security" />
-        <Button layoutX="343.0" layoutY="440.0" mnemonicParsing="false" onAction="#generateGateReportButtonOnAction" text="Generate Gate Report" />
+        <Button layoutX="190.0" layoutY="326.0" mnemonicParsing="false" onAction="#contactSecurityButtonOnAction" text="Contact Security" />
+        <Button layoutX="338.0" layoutY="326.0" mnemonicParsing="false" onAction="#generateGateReportButtonOnAction" text="Generate Gate Report" />
+      <Button layoutX="440.0" layoutY="276.0" mnemonicParsing="false" onAction="#addButtonOnAction" text="Add" />
+      <Button layoutX="514.0" layoutY="276.0" mnemonicParsing="false" onAction="#resetButtonOnAction" text="Reset" />
     </children>
 </AnchorPane>

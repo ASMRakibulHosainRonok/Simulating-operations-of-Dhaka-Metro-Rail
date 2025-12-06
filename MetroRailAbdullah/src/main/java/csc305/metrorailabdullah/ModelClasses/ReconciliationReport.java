@@ -1,8 +1,9 @@
 package csc305.metrorailabdullah.ModelClasses;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class ReconciliationReport {
+public class ReconciliationReport implements Serializable {
     private String reconReportId, salesReportId, staffName;
     private SalesReport report;
     private float physicalCash, onlineCash, refunds, balance;

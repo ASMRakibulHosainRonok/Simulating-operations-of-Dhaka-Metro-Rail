@@ -1,8 +1,9 @@
 package csc305.metrorailabdullah.ModelClasses;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class SpecialTravelCard extends TravelCard{
+public class SpecialTravelCard extends TravelCard implements Serializable {
     private String status;
     private float discountPrivilege;
     private LocalDate finalDate;

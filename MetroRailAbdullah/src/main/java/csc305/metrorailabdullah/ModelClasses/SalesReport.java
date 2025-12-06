@@ -1,8 +1,9 @@
 package csc305.metrorailabdullah.ModelClasses;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class SalesReport {
+public class SalesReport implements Serializable {
     private String reportId, staffName, routeOption, counterId;
     private int noOfTicketsSold, noOfUsage;
     private float revenues;
