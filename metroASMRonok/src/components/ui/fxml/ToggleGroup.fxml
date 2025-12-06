@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox spacing="4.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <fx:define>
+            <ToggleGroup fx:id="formatGroup" />
+        </fx:define>
+
+        <ToggleButton text="B" toggleGroup="$formatGroup" style="-fx-background-color: transparent; -fx-min-width: 32;" />
+        <ToggleButton text="I" toggleGroup="$formatGroup" style="-fx-background-color: transparent; -fx-min-width: 32;" />
+        <ToggleButton text="U" toggleGroup="$formatGroup" style="-fx-background-color: transparent; -fx-min-width: 32;" />
+    </children>
+</HBox>

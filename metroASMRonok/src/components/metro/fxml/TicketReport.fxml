@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+    </padding>
+    <children>
+        <HBox alignment="CENTER_LEFT" spacing="12.0">
+            <children>
+                <VBox style="-fx-background-color: #dbeafe; -fx-background-radius: 8; -fx-padding: 8;">
+                    <children>
+                        <Label text="🎫" textFill="#2563eb" />
+                    </children>
+                </VBox>
+                <Label text="Ticket Counter" textFill="#1f2937">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Region HBox.hgrow="ALWAYS" />
+                <Button text="Toggle Report" style="-fx-background-color: #2563eb; -fx-text-fill: white; -fx-background-radius: 8;" />
+            </children>
+            <VBox.margin>
+                <Insets bottom="16.0" />
+            </VBox.margin>
+        </HBox>
+
+        <VBox spacing="16.0">
+            <children>
+                <HBox spacing="16.0">
+                    <children>
+                        <VBox HBox.hgrow="ALWAYS" style="-fx-background-color: linear-gradient(to bottom right, #eff6ff, #dbeafe); -fx-background-radius: 12;">
+                            <padding>
+                                <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                            </padding>
+                            <children>
+                                <HBox spacing="8.0">
+                                    <children>
+                                        <Label text="📈" textFill="#2563eb" />
+                                        <Label text="Sold Today" textFill="#2563eb">
+                                            <font><Font name="System Bold" size="14.0" /></font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <Label text="52" textFill="#1d4ed8">
+                                    <font><Font name="System Bold" size="30.0" /></font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <VBox HBox.hgrow="ALWAYS" style="-fx-background-color: linear-gradient(to bottom right, #f0fdf4, #dcfce7); -fx-background-radius: 12;">
+                            <padding>
+                                <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                            </padding>
+                            <children>
+                                <HBox spacing="8.0">
+                                    <children>
+                                        <Label text="💲" textFill="#16a34a" />
+                                        <Label text="Cash Total" textFill="#16a34a">
+                                            <font><Font name="System Bold" size="14.0" /></font>
+                                        </Label>
+                                    </children>
+                                </HBox>
+                                <Label text="৳4500" textFill="#15803d">
+                                    <font><Font name="System Bold" size="30.0" /></font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+
+                <VBox style="-fx-background-color: #f9fafb; -fx-background-radius: 8;">
+                    <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                    </padding>
+                    <children>
+                        <Label text="Hourly Breakdown" textFill="#4b5563">
+                            <font><Font name="System Bold" size="14.0" /></font>
+                            <padding><Insets bottom="12.0" /></padding>
+                        </Label>
+                        <VBox spacing="8.0">
+                            <children>
+                                <HBox alignment="CENTER_LEFT">
+                                    <children>
+                                        <Label text="8-9 AM" textFill="#4b5563" />
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label text="12 tickets" textFill="#1f2937"><font><Font name="System Bold" size="14.0" /></font></Label>
+                                    </children>
+                                </HBox>
+                                <Separator />
+                                <HBox alignment="CENTER_LEFT">
+                                    <children>
+                                        <Label text="9-10 AM" textFill="#4b5563" />
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label text="18 tickets" textFill="#1f2937"><font><Font name="System Bold" size="14.0" /></font></Label>
+                                    </children>
+                                </HBox>
+                                <Separator />
+                                <HBox alignment="CENTER_LEFT">
+                                    <children>
+                                        <Label text="10-11 AM" textFill="#4b5563" />
+                                        <Region HBox.hgrow="ALWAYS" />
+                                        <Label text="22 tickets" textFill="#1f2937"><font><Font name="System Bold" size="14.0" /></font></Label>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+
+                <Button text="Forward to Accounts" maxWidth="Infinity" style="-fx-background-color: #059669; -fx-text-fill: white; -fx-background-radius: 8; -fx-padding: 8;" />
+            </children>
+        </VBox>
+    </children>
+</VBox>

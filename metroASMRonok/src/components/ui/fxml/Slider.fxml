@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Slider value="50.0" max="100.0" showTickMarks="false" showTickLabels="false" />
+    </children>
+</VBox>

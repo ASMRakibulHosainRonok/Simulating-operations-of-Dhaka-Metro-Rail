@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxWidth="300.0" style="-fx-background-color: white; -fx-background-radius: 8; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0); -fx-border-color: #e4e4e7; -fx-border-radius: 8; -fx-padding: 16;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox spacing="12.0">
+            <children>
+                <Circle fill="#f4f4f5" radius="20.0" />
+
+                <VBox spacing="4.0">
+                    <children>
+                        <Label text="@nextjs" textFill="#09090b">
+                            <font><Font name="System Bold" size="14.0" /></font>
+                        </Label>
+                        <Label text="The React Framework – created and maintained by @vercel." textFill="#71717a" wrapText="true" />
+                        <HBox spacing="12.0" style="-fx-padding: 8 0 0 0;">
+                            <children>
+                                <Label text="Joined December 2021" textFill="#a1a1aa" style="-fx-font-size: 10;">
+                                    <graphic><Label text="📅" style="-fx-padding: 0 4 0 0;"/></graphic>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

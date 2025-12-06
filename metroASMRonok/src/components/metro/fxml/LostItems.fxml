@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+    </padding>
+    <children>
+        <HBox alignment="CENTER_LEFT" spacing="12.0">
+            <children>
+                <VBox style="-fx-background-color: #ffedd5; -fx-background-radius: 8; -fx-padding: 8;">
+                    <children><Label text="📦" textFill="#ea580c" /></children>
+                </VBox>
+                <Label text="Lost &amp; Found" textFill="#1f2937">
+                    <font><Font name="System Bold" size="18.0" /></font>
+                </Label>
+            </children>
+            <VBox.margin><Insets bottom="16.0" /></VBox.margin>
+        </HBox>
+
+        <HBox spacing="8.0">
+            <children>
+                <TextField promptText="Item Name" HBox.hgrow="ALWAYS" style="-fx-background-radius: 8;" />
+                <TextField promptText="Location" HBox.hgrow="ALWAYS" style="-fx-background-radius: 8;" />
+                <Button text="+" style="-fx-background-color: #ea580c; -fx-text-fill: white; -fx-background-radius: 8;" />
+            </children>
+            <VBox.margin><Insets bottom="16.0" /></VBox.margin>
+        </HBox>
+
+        <ScrollPane fitToWidth="true" style="-fx-background: transparent; -fx-background-color: transparent;">
+            <content>
+                <VBox spacing="8.0">
+                    <VBox style="-fx-background-color: #f9fafb; -fx-border-color: #f3f4f6; -fx-border-radius: 8; -fx-padding: 12;">
+                        <children>
+                            <HBox alignment="CENTER_LEFT">
+                                <children>
+                                    <VBox>
+                                        <Label text="Black Umbrella" textFill="#1f2937" style="-fx-font-weight: bold;" />
+                                        <Label text="📍 Platform 2" textFill="#6b7280" style="-fx-font-size: 10;" />
+                                    </VBox>
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <Button text="Found" style="-fx-background-color: #22c55e; -fx-text-fill: white; -fx-font-size: 10; -fx-background-radius: 4;" />
+                                </children>
+                            </HBox>
+                        </children>
+                    </VBox>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</VBox>

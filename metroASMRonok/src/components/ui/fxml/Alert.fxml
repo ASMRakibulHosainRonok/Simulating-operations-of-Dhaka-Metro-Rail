@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox spacing="12.0" style="-fx-background-color: #f9fafb; -fx-border-color: #e5e7eb; -fx-border-radius: 8; -fx-background-radius: 8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+    </padding>
+    <children>
+        <Label text="ⓘ" textFill="#1f2937">
+            <font><Font size="18.0" /></font>
+        </Label>
+        <VBox spacing="4.0">
+            <children>
+                <Label text="Alert Title" textFill="#1f2937">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label text="This is the alert description text." textFill="#1f2937" wrapText="true" />
+            </children>
+        </VBox>
+    </children>
+
+</HBox>

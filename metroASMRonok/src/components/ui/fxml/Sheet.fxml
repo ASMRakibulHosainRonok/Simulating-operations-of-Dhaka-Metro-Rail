@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="CENTER_RIGHT" style="-fx-background-color: rgba(0,0,0,0.8);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox maxHeight="1.7976931348623157E308" maxWidth="400.0" prefWidth="350.0" style="-fx-background-color: white; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, -5, 0);">
+            <padding>
+                <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+            </padding>
+            <children>
+                <VBox spacing="4.0">
+                    <children>
+                        <Label text="Edit Profile" textFill="#09090b">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label text="Make changes to your profile here. Click save when you're done." textFill="#71717a" wrapText="true" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="32.0" />
+                    </VBox.margin>
+                </VBox>
+
+                <VBox VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label text="Sheet content goes here..." />
+                    </children>
+                </VBox>
+
+                <HBox alignment="CENTER_RIGHT" spacing="12.0" style="-fx-padding: 24 0 0 0;">
+                    <children>
+                        <Button text="Save changes" style="-fx-background-color: #18181b; -fx-text-fill: white; -fx-background-radius: 6; -fx-padding: 8 16; -fx-font-weight: bold;" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+
+        <Button text="✕" style="-fx-background-color: transparent; -fx-font-size: 16; -fx-text-fill: #a1a1aa;" StackPane.alignment="TOP_RIGHT">
+            <StackPane.margin>
+                <Insets right="360.0" top="10.0" />
+            </StackPane.margin>
+        </Button>
+    </children>
+</StackPane>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox style="-fx-background-color: white; -fx-background-radius: 12; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+    </padding>
+    <children>
+        <HBox alignment="CENTER_LEFT" spacing="12.0">
+            <children>
+                <VBox style="-fx-background-color: #e0e7ff; -fx-background-radius: 8; -fx-padding: 8;">
+                    <children>
+                        <Label text="📷" textFill="#4f46e5" />
+                    </children>
+                </VBox>
+                <Label text="CCTV Monitor" textFill="#1f2937">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Region HBox.hgrow="ALWAYS" />
+                <Button text="Hide Cameras" style="-fx-background-color: #4f46e5; -fx-text-fill: white; -fx-background-radius: 8;">
+                    <graphic>
+                        <Label text="👁️" textFill="WHITE" style="-fx-padding: 0 4 0 0;" />
+                    </graphic>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets bottom="16.0" />
+            </VBox.margin>
+        </HBox>
+
+        <GridPane hgap="12.0" vgap="12.0">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="50.0" />
+                <ColumnConstraints percentWidth="50.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints vgrow="NEVER" />
+                <RowConstraints vgrow="NEVER" />
+            </rowConstraints>
+            <children>
+                <VBox style="-fx-border-color: #bbf7d0; -fx-border-radius: 8; -fx-background-color: #f0fdf4; -fx-padding: 16;" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <Label text="CAM-01" textFill="#1f2937"><font><Font name="System Bold" size="14.0" /></font></Label>
+                            <Region HBox.hgrow="ALWAYS" />
+                            <Label text="✅" textFill="#22c55e" />
+                        </HBox>
+                        <Label text="Main Entrance" textFill="#4b5563" style="-fx-font-size: 14;" />
+                        <Label text="Gate 1 - North" textFill="#9ca3af" style="-fx-font-size: 12;">
+                            <VBox.margin><Insets top="4.0" /></VBox.margin>
+                        </Label>
+                        <HBox style="-fx-padding: 8 0 0 0;">
+                            <children>
+                                <Label text="Working" style="-fx-background-color: #dcfce7; -fx-text-fill: #15803d; -fx-background-radius: 12; -fx-padding: 2 8; -fx-font-size: 10;" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <VBox style="-fx-border-color: #fecaca; -fx-border-radius: 8; -fx-background-color: #fef2f2; -fx-padding: 16;" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <Label text="CAM-02" textFill="#1f2937"><font><Font name="System Bold" size="14.0" /></font></Label>
+                            <Region HBox.hgrow="ALWAYS" />
+                            <Label text="📶" textFill="#ef4444" />
+                        </HBox>
+                        <Label text="Ticket Counter" textFill="#4b5563" style="-fx-font-size: 14;" />
+                        <Label text="Hall B" textFill="#9ca3af" style="-fx-font-size: 12;">
+                            <VBox.margin><Insets top="4.0" /></VBox.margin>
+                        </Label>
+                        <HBox style="-fx-padding: 8 0 0 0;">
+                            <children>
+                                <Label text="Offline" style="-fx-background-color: #fee2e2; -fx-text-fill: #b91c1c; -fx-background-radius: 12; -fx-padding: 2 8; -fx-font-size: 10;" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <VBox style="-fx-border-color: #fef08a; -fx-border-radius: 8; -fx-background-color: #fefce8; -fx-padding: 16;" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <Label text="CAM-03" textFill="#1f2937"><font><Font name="System Bold" size="14.0" /></font></Label>
+                            <Region HBox.hgrow="ALWAYS" />
+                            <Label text="🔧" textFill="#eab308" />
+                        </HBox>
+                        <Label text="Platform 1" textFill="#4b5563" style="-fx-font-size: 14;" />
+                        <Label text="Zone A" textFill="#9ca3af" style="-fx-font-size: 12;">
+                            <VBox.margin><Insets top="4.0" /></VBox.margin>
+                        </Label>
+                        <HBox style="-fx-padding: 8 0 0 0;">
+                            <children>
+                                <Label text="Maintenance" style="-fx-background-color: #fef9c3; -fx-text-fill: #a16207; -fx-background-radius: 12; -fx-padding: 2 8; -fx-font-size: 10;" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <VBox style="-fx-border-color: #bbf7d0; -fx-border-radius: 8; -fx-background-color: #f0fdf4; -fx-padding: 16;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="8.0">
+                            <Label text="CAM-04" textFill="#1f2937"><font><Font name="System Bold" size="14.0" /></font></Label>
+                            <Region HBox.hgrow="ALWAYS" />
+                            <Label text="✅" textFill="#22c55e" />
+                        </HBox>
+                        <Label text="Platform 2" textFill="#4b5563" style="-fx-font-size: 14;" />
+                        <Label text="Zone B" textFill="#9ca3af" style="-fx-font-size: 12;">
+                            <VBox.margin><Insets top="4.0" /></VBox.margin>
+                        </Label>
+                        <HBox style="-fx-padding: 8 0 0 0;">
+                            <children>
+                                <Label text="Working" style="-fx-background-color: #dcfce7; -fx-text-fill: #15803d; -fx-background-radius: 12; -fx-padding: 2 8; -fx-font-size: 10;" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </GridPane>
+
+        <HBox spacing="16.0" style="-fx-background-color: #f9fafb; -fx-background-radius: 8; -fx-padding: 12;">
+            <children>
+                <HBox spacing="4.0" alignment="CENTER_LEFT">
+                    <Label text="✅" textFill="#22c55e" />
+                    <Label text="4 Working" textFill="#374151" style="-fx-font-size: 14;" />
+                </HBox>
+                <HBox spacing="4.0" alignment="CENTER_LEFT">
+                    <Label text="📶" textFill="#ef4444" />
+                    <Label text="1 Offline" textFill="#374151" style="-fx-font-size: 14;" />
+                </HBox>
+                <HBox spacing="4.0" alignment="CENTER_LEFT">
+                    <Label text="🔧" textFill="#eab308" />
+                    <Label text="1 Maintenance" textFill="#374151" style="-fx-font-size: 14;" />
+                </HBox>
+            </children>
+            <VBox.margin>
+                <Insets top="16.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

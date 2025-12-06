@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Separator?>
+
+<ScrollPane fitToWidth="true" style="-fx-background-color: white; -fx-border-color: #e4e4e7; -fx-border-radius: 8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <VBox spacing="12.0" style="-fx-padding: 16;">
+            <children>
+                <Label text="Tags" style="-fx-font-weight: bold; -fx-font-size: 14;" />
+
+                <VBox spacing="8.0">
+                    <Label text="v1.2.0-beta.50" textFill="#374151" />
+                    <Separator style="-fx-background-color: #e4e4e7;" />
+                    <Label text="v1.2.0-beta.49" textFill="#374151" />
+                    <Separator style="-fx-background-color: #e4e4e7;" />
+                    <Label text="v1.2.0-beta.48" textFill="#374151" />
+                    <Separator style="-fx-background-color: #e4e4e7;" />
+                    <Label text="v1.2.0-beta.47" textFill="#374151" />
+                </VBox>
+            </children>
+        </VBox>
+    </content>
+</ScrollPane>

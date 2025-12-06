@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="8.0" style="-fx-background-color: white; -fx-padding: 16; -fx-border-color: #e4e4e7; -fx-border-radius: 8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label text="Appearance" style="-fx-font-weight: bold; -fx-font-size: 14;" textFill="#09090b" />
+        <Label text="Customize the look and feel of the application." style="-fx-font-size: 12;" textFill="#71717a" />
+
+        <HBox spacing="8.0" style="-fx-padding: 8 0 0 0;">
+            <fx:define>
+                <ToggleGroup fx:id="themeGroup" />
+            </fx:define>
+
+            <ToggleButton text="Light" toggleGroup="$themeGroup" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: #e4e4e7; -fx-text-fill: #09090b; -fx-background-radius: 6; -fx-border-radius: 6;">
+            </ToggleButton>
+
+            <ToggleButton text="Dark" toggleGroup="$themeGroup" prefWidth="80.0" style="-fx-background-color: #18181b; -fx-text-fill: white; -fx-background-radius: 6;">
+            </ToggleButton>
+
+            <ToggleButton text="System" toggleGroup="$themeGroup" selected="true" prefWidth="80.0" style="-fx-background-color: #f4f4f5; -fx-text-fill: #18181b; -fx-background-radius: 6;" />
+        </HBox>
+    </children>
+</VBox>

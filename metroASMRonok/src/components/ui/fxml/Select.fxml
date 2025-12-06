@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.String?>
+
+<VBox style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <ComboBox promptText="Select a theme" style="-fx-background-color: white; -fx-border-color: #e4e4e7; -fx-border-radius: 6; -fx-background-radius: 6; -fx-font-size: 14;">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Light" />
+                <String fx:value="Dark" />
+                <String fx:value="System" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+</VBox>

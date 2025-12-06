@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.text.Font?>
+
+<TextArea promptText="Type your message here." prefRowCount="4" wrapText="true" style="-fx-background-color: white; -fx-border-color: #e4e4e7; -fx-border-radius: 6; -fx-background-radius: 6; -fx-control-inner-background: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <font>
+        <Font size="14.0" />
+    </font>
+</TextArea>

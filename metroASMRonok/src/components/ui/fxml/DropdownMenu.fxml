@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.geometry.Insets?>
+
+<MenuButton text="Options" style="-fx-background-color: white; -fx-border-color: #e4e4e7; -fx-border-radius: 6; -fx-background-radius: 6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <items>
+        <MenuItem text="Profile" />
+        <MenuItem text="Billing" />
+        <MenuItem text="Settings" />
+        <SeparatorMenuItem />
+        <MenuItem text="Logout" />
+    </items>
+    <padding>
+        <Insets top="8" right="16" bottom="8" left="16"/>
+    </padding>
+</MenuButton>

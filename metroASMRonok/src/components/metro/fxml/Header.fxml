@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" style="-fx-background-color: white; -fx-border-color: transparent transparent #e5e7eb transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="12.0" left="16.0" right="16.0" top="12.0" />
+    </padding>
+    <children>
+        <HBox alignment="CENTER_LEFT" spacing="12.0">
+            <children>
+                <VBox alignment="CENTER" style="-fx-background-color: #d1fae5; -fx-background-radius: 8;">
+                    <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                    </padding>
+                    <children>
+                        <Label text="🚆" textFill="#059669">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox>
+                    <children>
+                        <Label text="Dhaka Metro Rail" textFill="#1f2937">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label text="Station Master Panel" textFill="#6b7280">
+                            <font>
+                                <Font size="12.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Region HBox.hgrow="ALWAYS" />
+        <HBox alignment="CENTER" spacing="16.0">
+            <children>
+                <Button mnemonicParsing="false" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <HBox>
+                            <children>
+                                <Label text="🔔" textFill="#6b7280">
+                                    <font>
+                                        <Font size="20.0" />
+                                    </font>
+                                </Label>
+                                <Circle fill="#ef4444" radius="4.0" stroke="TRANSPARENT" translateY="-5.0" />
+                            </children>
+                        </HBox>
+                    </graphic>
+                </Button>
+                <HBox alignment="CENTER" spacing="8.0" style="-fx-background-color: #f9fafb; -fx-background-radius: 8;">
+                    <padding>
+                        <Insets bottom="8.0" left="12.0" right="12.0" top="8.0" />
+                    </padding>
+                    <children>
+                        <Label text="👤" textFill="#6b7280" />
+                        <Label text="Station" textFill="#374151">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <Button mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #dc2626;" text="Logout">
+                    <graphic>
+                        <Label text="🚪" textFill="#dc2626" />
+                    </graphic>
+                </Button>
+            </children>
+        </HBox>
+    </children>
+</HBox>

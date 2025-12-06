@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.VBox?>
+
+<Accordion xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <panes>
+        <TitledPane animated="true" text="Item 1" style="-fx-background-color: white;">
+            <content>
+                <VBox style="-fx-background-color: white; -fx-padding: 16;">
+                    <children>
+                        <Label text="Content for section 1." textFill="#6b7280" wrapText="true" />
+                    </children>
+                </VBox>
+            </content>
+        </TitledPane>
+        <TitledPane animated="true" text="Item 2" style="-fx-background-color: white;">
+            <content>
+                <VBox style="-fx-background-color: white; -fx-padding: 16;">
+                    <children>
+                        <Label text="Content for section 2." textFill="#6b7280" wrapText="true" />
+                    </children>
+                </VBox>
+            </content>
+        </TitledPane>
+        <TitledPane animated="true" text="Item 3" style="-fx-background-color: white;">
+            <content>
+                <VBox style="-fx-background-color: white; -fx-padding: 16;">
+                    <children>
+                        <Label text="Content for section 3." textFill="#6b7280" wrapText="true" />
+                    </children>
+                </VBox>
+            </content>
+        </TitledPane>
+    </panes>
+</Accordion>

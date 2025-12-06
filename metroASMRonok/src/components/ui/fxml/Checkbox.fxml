@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.text.Font?>
+
+<CheckBox mnemonicParsing="false" text="Accept terms and conditions" textFill="#1f2937" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <font>
+        <Font size="14.0" />
+    </font>
+    <style>
+        -fx-cursor: hand;
+        -fx-padding: 4;
+    </style>
+</CheckBox>

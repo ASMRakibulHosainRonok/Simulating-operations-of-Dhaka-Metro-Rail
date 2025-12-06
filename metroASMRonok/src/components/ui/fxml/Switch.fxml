@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<StackPane alignment="CENTER_LEFT" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Rectangle width="44.0" height="24.0" arcWidth="24.0" arcHeight="24.0" fill="#e4e4e7" />
+
+        <Circle radius="10.0" fill="WHITE" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 2, 0, 0, 1);">
+            <translateX>2.0</translateX> </Circle>
+    </children>
+</StackPane>

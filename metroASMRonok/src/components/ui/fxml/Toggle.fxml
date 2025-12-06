@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.text.Font?>
+
+<ToggleButton text="B" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-text-fill: #71717a;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <font>
+        <Font name="System Bold" size="14.0" />
+    </font>
+</ToggleButton>

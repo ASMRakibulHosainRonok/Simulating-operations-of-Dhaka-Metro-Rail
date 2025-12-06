@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="BOTTOM_CENTER" style="-fx-background-color: rgba(0,0,0,0.8);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox maxHeight="-Infinity" style="-fx-background-color: white; -fx-background-radius: 12 12 0 0; -fx-padding: 16;">
+            <children>
+                <StackPane alignment="CENTER" style="-fx-padding: 0 0 16 0;">
+                    <children>
+                        <Rectangle width="48" height="4" fill="#e4e4e7" arcWidth="4" arcHeight="4" />
+                    </children>
+                </StackPane>
+
+                <Label text="Drawer Title" textFill="#09090b">
+                    <font><Font name="System Bold" size="20.0" /></font>
+                    <VBox.margin><Insets bottom="8.0" /></VBox.margin>
+                </Label>
+
+                <Label text="This action cannot be undone." textFill="#71717a">
+                    <VBox.margin><Insets bottom="24.0" /></VBox.margin>
+                </Label>
+
+                <VBox prefHeight="200.0">
+                    <children>
+                        <Label text="Drawer body content..." />
+                    </children>
+                </VBox>
+
+            </children>
+        </VBox>
+    </children>
+</StackPane>

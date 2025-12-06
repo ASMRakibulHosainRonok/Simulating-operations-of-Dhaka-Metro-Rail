@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<ContextMenu style="-fx-background-color: white; -fx-background-radius: 6; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 0);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <items>
+        <MenuItem text="Back" style="-fx-padding: 8 12;" />
+        <MenuItem text="Forward" style="-fx-padding: 8 12;" />
+        <MenuItem text="Reload" style="-fx-padding: 8 12;" />
+        <SeparatorMenuItem />
+        <MenuItem text="Save As..." style="-fx-padding: 8 12;" />
+        <MenuItem text="Print..." style="-fx-padding: 8 12;" />
+    </items>
+</ContextMenu>

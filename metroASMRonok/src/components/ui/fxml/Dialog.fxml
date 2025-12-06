@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane style="-fx-background-color: rgba(0,0,0,0.8);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox maxWidth="512.0" style="-fx-background-color: white; -fx-background-radius: 8; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0); -fx-padding: 24;">
+            <children>
+                <VBox spacing="6.0">
+                    <children>
+                        <Label text="Edit Profile" textFill="#09090b">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label text="Make changes to your profile here. Click save when you're done." textFill="#71717a" wrapText="true" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="24.0" />
+                    </VBox.margin>
+                </VBox>
+
+                <VBox spacing="16.0">
+                    <children>
+                        <Label text="Form content goes here..." textFill="#374151"/>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="24.0" />
+                    </VBox.margin>
+                </VBox>
+
+                <HBox alignment="CENTER_RIGHT" spacing="12.0">
+                    <children>
+                        <Button text="Cancel" style="-fx-background-color: white; -fx-border-color: #e4e4e7; -fx-border-radius: 6; -fx-text-fill: #09090b; -fx-padding: 8 16;" />
+                        <Button text="Save Changes" style="-fx-background-color: #18181b; -fx-text-fill: white; -fx-background-radius: 6; -fx-padding: 8 16;" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</StackPane>
