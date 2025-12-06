@@ -1,6 +1,9 @@
 package csc305.metrorailabdullah.Passenger;
 
+import csc305.metrorailabdullah.ModelClasses.*;
 import csc305.metrorailabdullah.User;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.io.Serializable;
 import java.util.Random;
@@ -48,6 +51,39 @@ public class Passenger extends User implements Serializable {
                 ", password='" + password + '\'' +
                 ", phoneNo='" + phoneNo + '\'' +
                 '}';
+    }
+
+    public boolean purchaseTicket(Ticket tick) {
+        return true;
+    }
+
+    public boolean rechargeTravelCard(TravelCard card) {
+        return true;
+    }
+
+    public boolean checkRoutesAndFares(RouteAndFare route) {
+        return true;
+    }
+
+    public boolean checkLiveStatus(Schedule routine) {
+        return true;
+    }
+
+    public boolean applyForRefund(IssueReport report) {
+        return true;
+    }
+
+    public boolean provideFeedback(Feedback feed) {
+        return true;
+    }
+
+    public ObservableList<History> seeHistory() {
+        ObservableList<History> histories = FXCollections.observableArrayList();
+        return histories;
+    }
+
+    public boolean manageLinkedUser(Dependent user) {
+        return true;
     }
 
 }
