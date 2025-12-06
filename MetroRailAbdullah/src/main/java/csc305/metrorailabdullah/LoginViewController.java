@@ -1,7 +1,9 @@
 package csc305.metrorailabdullah;
 
 import csc305.metrorailabdullah.Passenger.Passenger;
+import csc305.metrorailabdullah.Passenger.PassengerDashboardViewController;
 import csc305.metrorailabdullah.TicketingStaff.TicketingStaff;
+import csc305.metrorailabdullah.TicketingStaff.TicketingStaffDashboardViewController;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -49,6 +51,8 @@ public class LoginViewController
                         success.showAndWait();
                         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Passenger/PassengerDashboardView.fxml"));
                         Scene scene = new Scene(fxmlLoader.load());
+                        PassengerDashboardViewController pass = fxmlLoader.getController();
+                        pass.setPassenger(p);
                         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                         currentStage.setTitle("Passenger Dashboard");
                         currentStage.setScene(scene);
@@ -68,6 +72,8 @@ public class LoginViewController
                         success.showAndWait();
                         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("TicketingStaff/TicketingStaffView.fxml"));
                         Scene scene = new Scene(fxmlLoader.load());
+                        TicketingStaffDashboardViewController staffBoard = fxmlLoader.getController();
+                        staffBoard.setTicketingStaff(staff);
                         Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
                         currentStage.setTitle("Ticketing Staff Dashboard");
                         currentStage.setScene(scene);
