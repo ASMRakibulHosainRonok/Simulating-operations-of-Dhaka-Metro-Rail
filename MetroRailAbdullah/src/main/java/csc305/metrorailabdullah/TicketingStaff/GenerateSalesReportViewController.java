@@ -111,7 +111,7 @@ public class GenerateSalesReportViewController
             LocalDate from = fromDatePicker.getValue();
             LocalDate to = toDatePicker.getValue();
             for(SalesReport report: reportList) {
-                if(report.getCounterId().equals(counterId) && ((report.getReportDate().isEqual(from) | report.getReportDate().isAfter(from)) && (report.getReportDate().isEqual(to) | report.getReportDate().isBefore(to)))) {
+                if(report.getCounterId().equals(counterId) && ((report.getReportDate().isEqual(from) || report.getReportDate().isAfter(from)) && (report.getReportDate().isEqual(to) || report.getReportDate().isBefore(to)))) {
                     filteredReportList.add(report);
                 }
             }
