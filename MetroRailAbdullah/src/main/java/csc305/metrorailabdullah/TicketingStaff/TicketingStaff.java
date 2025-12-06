@@ -1,6 +1,9 @@
 package csc305.metrorailabdullah.TicketingStaff;
 
+import csc305.metrorailabdullah.ModelClasses.*;
 import csc305.metrorailabdullah.User;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.io.Serializable;
 
@@ -42,4 +45,39 @@ public class TicketingStaff extends User implements Serializable {
                 ", phoneNo='" + phoneNo + '\'' +
                 '}';
     }
+
+    public boolean generateTicket(Ticket tick) {
+        return true;
+    }
+
+    public ObservableList<SalesReport> generateSalesReport() {
+        ObservableList<SalesReport> report = FXCollections.observableArrayList();
+        return report;
+    }
+
+    public ObservableList<ReconciliationReport> generateReconciliationReport() {
+        ObservableList<ReconciliationReport> report = FXCollections.observableArrayList();
+        return report;
+    }
+
+    public boolean rechargeTravelCardByTicketingStaff(TravelCard card) {
+        return true;
+    }
+
+    public boolean replaceTravelCard(TravelCard card) {
+        return true;
+    }
+
+    public boolean monitorGates(Gate g) {
+        return true;
+    }
+
+    public boolean checkComplaint(Complaint report) {
+        return  true;
+    }
+
+    public boolean generateSpecialPass(SpecialTravelCard card) {
+        return true;
+    }
+
 }
